@@ -26,6 +26,30 @@ Virtual inbox router for AI agents.
 
 Submail connects to one or more real email inboxes via IMAP and re-exposes them as a REST API with per-agent access control. Each agent gets their own API token scoped to one or more configured addresses that all deliver into the same monitored inbox.
 
+```mermaid
+flowchart LR
+    SENDERS(["📨 Senders"])
+
+    subgraph account["📬 bot@example.com"]
+        AL1["bot+agent1@example.com"]
+        AL2["bot+agent2@example.com"]
+    end
+
+    subgraph submail["⚙️ Submail"]
+        API["REST API"]
+    end
+
+    subgraph agents["🤖 Agents"]
+        AG1(["Agent 1"])
+        AG2(["Agent 2"])
+    end
+
+    SENDERS --> account
+    account -- "IMAP (read-only)" --> submail
+    AG1 -- "token: agent1" --> API
+    AG2 -- "token: agent2" --> API
+```
+
 The addresses can be set up in any way your mail provider supports — plus-addressing (e.g. `bot+agent1@example.com`) is a common and convenient option, but fully separate aliases (e.g. `agent1@example.com`, `agent2@example.com`) pointing to the same inbox work just as well.
 
 ## Usage
