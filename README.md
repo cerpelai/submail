@@ -5,7 +5,6 @@
 </p>
 
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/cerpelai/submail)
-[![Go Report Card](https://goreportcard.com/badge/github.com/cerpelai/submail)](https://goreportcard.com/report/github.com/cerpelai/submail)
 [![codecov](https://codecov.io/github/cerpelai/submail/graph/badge.svg)](https://codecov.io/github/cerpelai/submail)
 ![test](https://github.com/cerpelai/submail/actions/workflows/go.yml/badge.svg?branch=main)
 ![docker](https://github.com/cerpelai/submail/actions/workflows/docker.yml/badge.svg?branch=main)
