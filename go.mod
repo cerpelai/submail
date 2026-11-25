@@ -3,7 +3,7 @@ module github.com/cerpelai/submail
 go 1.27.0
 
 require (
-	github.com/emersion/go-imap/v2 v2.0.0-beta.8
+	github.com/emersion/go-imap/v2 v2.0.0-beta.9
 	github.com/emersion/go-message v0.18.2
 	github.com/google/uuid v1.6.0
 	github.com/labstack/echo/v4 v4.15.1
