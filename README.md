@@ -4,12 +4,12 @@
   <img src=".github/assets/logo.png" alt="Submail logo" width="120" />
 </p>
 
-![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/chickenzord/submail)
-[![Go Report Card](https://goreportcard.com/badge/github.com/chickenzord/submail)](https://goreportcard.com/report/github.com/chickenzord/submail)
-[![codecov](https://codecov.io/github/chickenzord/submail/graph/badge.svg)](https://codecov.io/github/chickenzord/submail)
-![test](https://github.com/chickenzord/submail/actions/workflows/go.yml/badge.svg?branch=main)
-![docker](https://github.com/chickenzord/submail/actions/workflows/docker.yml/badge.svg?branch=main)
-![Code License](https://img.shields.io/github/license/chickenzord/submail)
+![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/cerpelai/submail)
+[![Go Report Card](https://goreportcard.com/badge/github.com/cerpelai/submail)](https://goreportcard.com/report/github.com/cerpelai/submail)
+[![codecov](https://codecov.io/github/cerpelai/submail/graph/badge.svg)](https://codecov.io/github/cerpelai/submail)
+![test](https://github.com/cerpelai/submail/actions/workflows/go.yml/badge.svg?branch=main)
+![docker](https://github.com/cerpelai/submail/actions/workflows/docker.yml/badge.svg?branch=main)
+![Code License](https://img.shields.io/github/license/cerpelai/submail)
 
 Virtual inbox router for AI agents.
 
@@ -83,7 +83,7 @@ agents:
 ```yaml
 services:
   submail:
-    image: ghcr.io/chickenzord/submail:latest
+    image: ghcr.io/cerpelai/submail:latest
     restart: unless-stopped
     ports:
       - "8080:8080"
@@ -120,15 +120,15 @@ See [`config.example.yaml`](config.example.yaml) for the full config reference.
 
 **Homebrew (macOS / Linux):**
 ```bash
-brew install chickenzord/tap/submail
+brew install cerpelai/tap/submail
 ```
 
 **Go install:**
 ```bash
-go install github.com/chickenzord/submail/cmd/submail@latest
+go install github.com/cerpelai/submail/cmd/submail@latest
 ```
 
-**Binary download:** grab the archive for your platform from the [releases page](https://github.com/chickenzord/submail/releases).
+**Binary download:** grab the archive for your platform from the [releases page](https://github.com/cerpelai/submail/releases).
 
 #### Basic usage
 
@@ -159,7 +159,7 @@ The repo ships a `submail-client` skill that teaches AI agents (pi, OpenClaw-com
 Install it into your agent's skills directory:
 
 ```bash
-npx skills add chickenzord/submail
+npx skills add cerpelai/submail
 ```
 
 Or manually copy from this repo:
@@ -171,7 +171,7 @@ cp -r skills/submail-client <your-agent-skills-dir>/
 Or clone the repo and copy from there:
 
 ```bash
-git clone https://github.com/chickenzord/submail /tmp/submail
+git clone https://github.com/cerpelai/submail /tmp/submail
 cp -r /tmp/submail/skills/submail-client <your-agent-skills-dir>/
 ```
 

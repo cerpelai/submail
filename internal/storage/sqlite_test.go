@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/chickenzord/submail/internal/storage"
+	"github.com/cerpelai/submail/internal/storage"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

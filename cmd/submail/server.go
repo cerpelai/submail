@@ -11,10 +11,10 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/chickenzord/submail/internal/api"
-	"github.com/chickenzord/submail/internal/config"
-	"github.com/chickenzord/submail/internal/imap"
-	"github.com/chickenzord/submail/internal/storage"
+	"github.com/cerpelai/submail/internal/api"
+	"github.com/cerpelai/submail/internal/config"
+	"github.com/cerpelai/submail/internal/imap"
+	"github.com/cerpelai/submail/internal/storage"
 	"github.com/spf13/cobra"
 	"golang.org/x/sync/errgroup"
 )

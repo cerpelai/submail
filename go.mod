@@ -1,4 +1,4 @@
-module github.com/chickenzord/submail
+module github.com/cerpelai/submail
 
 go 1.25.0
 

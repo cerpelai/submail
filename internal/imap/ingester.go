@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/chickenzord/submail/internal/config"
-	"github.com/chickenzord/submail/internal/storage"
+	"github.com/cerpelai/submail/internal/config"
+	"github.com/cerpelai/submail/internal/storage"
 	goimap "github.com/emersion/go-imap/v2"
 	"github.com/emersion/go-imap/v2/imapclient"
 	"github.com/emersion/go-message/mail"

@@ -4,8 +4,8 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/chickenzord/submail/internal/config"
-	"github.com/chickenzord/submail/internal/storage"
+	"github.com/cerpelai/submail/internal/config"
+	"github.com/cerpelai/submail/internal/storage"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 )

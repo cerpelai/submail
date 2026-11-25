@@ -3,7 +3,7 @@ package api
 import (
 	"time"
 
-	"github.com/chickenzord/submail/internal/storage"
+	"github.com/cerpelai/submail/internal/storage"
 )
 
 // Mail is the API representation of an email message.

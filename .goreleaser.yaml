@@ -20,9 +20,9 @@ builds:
       - -trimpath
     ldflags:
       - -s -w
-      - -X github.com/chickenzord/submail/internal/version.Version={{.Version}}
-      - -X github.com/chickenzord/submail/internal/version.GitCommit={{.FullCommit}}
-      - -X github.com/chickenzord/submail/internal/version.BuildDate={{.Date}}
+      - -X github.com/cerpelai/submail/internal/version.Version={{.Version}}
+      - -X github.com/cerpelai/submail/internal/version.GitCommit={{.FullCommit}}
+      - -X github.com/cerpelai/submail/internal/version.BuildDate={{.Date}}
     mod_timestamp: '{{ .CommitTimestamp }}'
 
 archives:
@@ -92,43 +92,43 @@ release:
 
     **Homebrew (macOS/Linux):**
     ```bash
-    brew install chickenzord/tap/submail
+    brew install cerpelai/tap/submail
     ```
 
     **Go Install:**
     ```bash
-    go install github.com/chickenzord/submail/cmd/submail@{{ .Tag }}
+    go install github.com/cerpelai/submail/cmd/submail@{{ .Tag }}
     ```
 
     **Docker:**
     ```bash
-    docker pull ghcr.io/chickenzord/submail:{{ .Tag }}
+    docker pull ghcr.io/cerpelai/submail:{{ .Tag }}
     ```
   footer: |
-    **Full Changelog**: https://github.com/chickenzord/submail/compare/{{ .PreviousTag }}...{{ .Tag }}
+    **Full Changelog**: https://github.com/cerpelai/submail/compare/{{ .PreviousTag }}...{{ .Tag }}
 
 universal_binaries:
   - replace: false
 
 brews:
   - description: A virtual inbox router for AI agents.
-    homepage: https://github.com/chickenzord/submail
+    homepage: https://github.com/cerpelai/submail
     directory: Formula
     download_strategy: CurlDownloadStrategy
     license: "MIT"
     custom_block: |
       head do
-        url "https://github.com/chickenzord/submail.git", branch: "main"
+        url "https://github.com/cerpelai/submail.git", branch: "main"
         depends_on "go" => :build
       end
     install: |
       if build.head?
-        system "go", "build", *std_go_args(ldflags: "-s -w -X github.com/chickenzord/submail/internal/version.Version={{.Version}} -X github.com/chickenzord/submail/internal/version.GitCommit={{.FullCommit}} -X github.com/chickenzord/submail/internal/version.BuildDate={{.Date}}"), "./cmd/submail"
+        system "go", "build", *std_go_args(ldflags: "-s -w -X github.com/cerpelai/submail/internal/version.Version={{.Version}} -X github.com/cerpelai/submail/internal/version.GitCommit={{.FullCommit}} -X github.com/cerpelai/submail/internal/version.BuildDate={{.Date}}"), "./cmd/submail"
       else
         bin.install "submail"
       end
     repository:
-      owner: chickenzord
+      owner: cerpelai
       name: homebrew-tap
       branch: main
       token: "{{ .Env.TAP_GITHUB_TOKEN }}"

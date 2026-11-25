@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/chickenzord/submail/internal/config"
+	"github.com/cerpelai/submail/internal/config"
 	"github.com/labstack/echo/v4"
 )
 

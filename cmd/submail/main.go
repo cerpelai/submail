@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/chickenzord/submail/internal/version"
+	"github.com/cerpelai/submail/internal/version"
 	"github.com/spf13/cobra"
 )
 

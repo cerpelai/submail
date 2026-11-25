@@ -3,7 +3,7 @@ package api_test
 import (
 	"testing"
 
-	"github.com/chickenzord/submail/internal/api"
+	"github.com/cerpelai/submail/internal/api"
 	"github.com/stretchr/testify/assert"
 )
 

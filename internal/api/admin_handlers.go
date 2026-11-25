@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/chickenzord/submail/internal/storage"
+	"github.com/cerpelai/submail/internal/storage"
 	"github.com/labstack/echo/v4"
 )
 

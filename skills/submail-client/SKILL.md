@@ -8,7 +8,7 @@ metadata:
     "openclaw":
       {
         "emoji": "📬",
-        "homepage": "https://github.com/chickenzord/submail",
+        "homepage": "https://github.com/cerpelai/submail",
         "keywords": ["email", "inbox", "imap", "submail", "cli", "agent", "mail"],
         "requires": { "bins": ["submail", "jq"] },
         "install":
@@ -16,14 +16,14 @@ metadata:
             {
               "id": "brew-submail",
               "kind": "brew",
-              "formula": "chickenzord/tap/submail",
+              "formula": "cerpelai/tap/submail",
               "bins": ["submail"],
               "label": "Install submail (brew)",
             },
             {
               "id": "download-submail",
               "kind": "download",
-              "url": "https://github.com/chickenzord/submail/releases",
+              "url": "https://github.com/cerpelai/submail/releases",
               "bins": ["submail"],
               "label": "Download submail binary",
             },

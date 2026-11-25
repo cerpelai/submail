@@ -12,9 +12,9 @@ ARG BUILD_DATE=unknown
 
 RUN CGO_ENABLED=0 GOOS=linux go build \
     -ldflags="-w -s \
-      -X 'github.com/chickenzord/submail/internal/version.Version=${VERSION}' \
-      -X 'github.com/chickenzord/submail/internal/version.GitCommit=${GIT_COMMIT}' \
-      -X 'github.com/chickenzord/submail/internal/version.BuildDate=${BUILD_DATE}'" \
+      -X 'github.com/cerpelai/submail/internal/version.Version=${VERSION}' \
+      -X 'github.com/cerpelai/submail/internal/version.GitCommit=${GIT_COMMIT}' \
+      -X 'github.com/cerpelai/submail/internal/version.BuildDate=${BUILD_DATE}'" \
     -trimpath -a \
     -o submail ./cmd/submail
 
